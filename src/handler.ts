@@ -8,7 +8,7 @@ export async function handleRequest(request: Request): Promise<Response> {
   const url = new URL(request.url);
 
   if (url.pathname === '/') {
-    return Response.redirect('https://github.com/alsotang/cf_workers__file', 302)
+    return Response.redirect('https://local.phoenixxie.xyz', 302)
   }
 
   const desiredSize = getDesiredSize(url.pathname);
